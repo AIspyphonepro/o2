@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f7fb">
+<title>meinO2 — Download</title>
+<style>
+:root{--blue:#1765ee;--ink:#172238;--muted:#788397;--line:#e8edf4;--green:#16a36a}
+*{box-sizing:border-box}
+body{margin:0;min-height:100svh;background:radial-gradient(ellipse at 50% 10%,#e8f0ff 0,transparent 48%),#f5f7fb;color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;display:grid;place-items:center;padding:24px}
+main{width:min(100%,390px);text-align:center}
+.brand{font-size:30px;font-weight:800;letter-spacing:-1.8px;margin-bottom:54px}.brand span{color:var(--blue)}
+.mark{width:78px;height:78px;margin:0 auto 27px;border-radius:25px;background:linear-gradient(145deg,#2678ff,#1252d5);display:grid;place-items:center;box-shadow:0 14px 32px #1765ee35}
+.mark svg{width:35px;height:35px}
+h1{font-size:27px;letter-spacing:-1px;margin:0 0 10px;font-weight:780}
+.subtitle{font-size:14px;line-height:1.7;color:var(--muted);margin:0 auto;max-width:310px}
+.status{display:flex;align-items:center;justify-content:center;gap:9px;margin:28px 0 23px;color:#53627a;font-size:12px;font-weight:650}
+.dot{width:7px;height:7px;border-radius:50%;background:#20b978;box-shadow:0 0 0 5px #20b97818}
+.action{width:100%;min-height:54px;border:0;border-radius:13px;background:var(--blue);color:white;font-size:13px;font-weight:750;letter-spacing:.02em;display:flex;align-items:center;justify-content:center;gap:12px;text-decoration:none;box-shadow:0 10px 22px #1765ee2a;transition:transform .2s,background .2s;cursor:pointer}
+.action:hover{background:#0e55d6;transform:translateY(-2px)}
+.action svg{width:17px;height:17px}
+.meta{margin-top:15px;font-size:11px;color:#9aa4b4}
+.divider{height:1px;background:var(--line);margin:32px 0 22px}
+.help{font-size:12px;color:#778397;line-height:1.75}
+.help strong{color:#43516a}
+footer{margin-top:40px;font-size:10px;color:#a5adba;letter-spacing:.08em}
+#ready{display:none}
+.steps{display:grid;gap:12px;text-align:left;margin:25px 0}
+.step{display:flex;align-items:center;gap:13px;background:#fff;border:1px solid var(--line);border-radius:13px;padding:13px 15px}
+.step-no{width:28px;height:28px;flex:0 0 28px;border-radius:9px;background:#edf3ff;color:var(--blue);display:grid;place-items:center;font-size:12px;font-weight:800}
+.step strong{display:block;font-size:12px;margin-bottom:3px}.step small{display:block;color:var(--muted);font-size:11px;line-height:1.5}
+.ready-mark{background:linear-gradient(145deg,#20b978,#11875a);box-shadow:0 14px 32px #16a36a30}
+.ready-note{font-size:11px;line-height:1.6;color:#7c8798;background:#fff;border:1px solid var(--line);padding:12px 14px;border-radius:12px;margin-top:16px}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">mein<span>O2</span></div>
+
+  <section id="downloading">
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3m0 0L7.5 7.5M12 3l4.5 4.5"/><path d="M5 13v5.2A2.8 2.8 0 0 0 7.8 21h8.4a2.8 2.8 0 0 0 2.8-2.8V13"/></svg>
+    </div>
+    <h1>Your download is starting.</h1>
+    <p class="subtitle">We're preparing the meinO2 Android app for your device.</p>
+    <div class="status"><span class="dot"></span><span id="status">Starting your download…</span></div>
+    <a class="action" id="download" href="o2app/o2.apk" download="meinO2.apk">DOWNLOAD APK
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 5-5m-5 5-5-5"/><path d="M5 17v3h14v-3"/></svg>
+    </a>
+    <div class="meta">ANDROID APPLICATION · APK FILE</div>
+    <div class="divider"></div>
+    <p class="help">If the download doesn't start automatically, tap <strong>DOWNLOAD APK</strong>.</p>
+  </section>
+
+  <section id="ready">
+    <div class="mark ready-mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg>
+    </div>
+    <h1>Your app is ready.</h1>
+    <p class="subtitle">The meinO2 download has been started. Find the APK file on your phone and open it to install the app.</p>
+    <div class="steps">
+      <div class="step"><span class="step-no">1</span><div><strong>Open Downloads</strong><small>Find <b>meinO2.apk</b> in your phone's Downloads folder.</small></div></div>
+      <div class="step"><span class="step-no">2</span><div><strong>Tap the APK file</strong><small>Follow Android's installation prompt. If asked, allow installs from this source.</small></div></div>
+      <div class="step"><span class="step-no">3</span><div><strong>Open meinO2</strong><small>Once installation finishes, launch the app from your home screen.</small></div></div>
+    </div>
+    <button class="action" id="again" type="button">DOWNLOAD AGAIN
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7v5h-5"/><path d="M19 12a7 7 0 1 1-2-4.9L20 12"/></svg>
+    </button>
+    <div class="ready-note">If the file is still downloading, wait until it finishes before opening it.</div>
+  </section>
+  <footer>MEINO2 · MOBILE EXPERIENCE</footer>
+</main>
+<script>
+(() => {
+  const downloadLink = document.getElementById('download');
+  const status = document.getElementById('status');
+  const downloading = document.getElementById('downloading');
+  const ready = document.getElementById('ready');
+  let switched = false;
+
+  function showReadyState() {
+    if (switched) return;
+    switched = true;
+    downloading.style.display = 'none';
+    ready.style.display = 'block';
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+
+  function startDownload() {
+    const a = document.createElement('a');
+    a.href = 'o2app/o2.apk';
+    a.download = 'meinO2.apk';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    status.textContent = 'Download requested';
+    // Browsers do not expose a reliable event for completion of an APK download.
+    // Switch to clear installation instructions after the download has been initiated.
+    window.setTimeout(showReadyState, 1800);
+  }
+
+  window.addEventListener('load', () => window.setTimeout(startDownload, 500));
+  document.getElementById('again').addEventListener('click', () => {
+    const a = document.createElement('a');
+    a.href = 'o2app/o2.apk';
+    a.download = 'meinO2.apk';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  });
+  downloadLink.addEventListener('click', () => {
+    status.textContent = 'Download requested';
+    window.setTimeout(showReadyState, 1800);
+  });
+})();
+</script>
+</body>
+</html>
